@@ -2,13 +2,13 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-app.get('/first', (req, res) => {
-    res.send('שלום, זו הפונקציה של בת א!');
+app.get('/second', (req, res) => {
+    res.send('שלום, זו הפונקציה של בת ב!');
 });
 
 
 app.get('/getString', (req, res) => {
-    res.send('התחביב שלי זה ללמוד תכנות'); 
+    res.send('התחביב שלי זה ללמוד תסרוקות'); 
 });
 
 app.listen(port, () => {
